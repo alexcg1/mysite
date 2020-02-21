@@ -24,10 +24,10 @@ def post_list(request, tag_slug=None):
         tag = get_object_or_404(Tag, slug=tag_slug)
         object_list = object_list.filter(tags__in=[tag])
 
-    paginator = Paginator(object_list, 3)  # 3 posts per page
+    paginator = Paginator(object_list, 5)  # 3 posts per page
     page = request.GET.get('page')
     try:
-        posts = paginator.page(1)
+        posts = paginator.page(page)
     except EmptyPage:
         posts = paginator.page(paginator.num_pages)
 
