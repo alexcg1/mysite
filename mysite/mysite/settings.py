@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'blog.apps.BlogConfig',
     'taggit',
     'bootstrap4',
+    'django.contrib.sites',
+    'django.contrib.sitemaps'
 ]
 
 MIDDLEWARE = [
@@ -122,6 +124,8 @@ USE_TZ = True
 
 STATIC_ROOT = '/home/alexcg/code/python/mysite/mysite/static'
 STATIC_URL = '/static/'
+
+SITE_ID = 1
 
 # Write emails to console. not SMTP
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
