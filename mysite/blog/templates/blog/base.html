@@ -11,14 +11,12 @@
 <html>
 <head>
 <title>{% block title %}{% endblock %}</title>
-{% comment %} <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> {% endcomment %}
-<link href="{% static "css/blog.css" %}" rel="stylesheet">
   <link href={% static "css/simple-sidebar.css" %} rel="stylesheet">
 </head>
 
 <body>
     <div class="d-flex" id="wrapper">
-        <div class="bg-light border-right" id="sidebar-wrapper">
+        <div class="bg-light border-right" id="sidebar-wrapper" style="m-2">
             <h2>My blog</h2>
             <p>This is my blog. I've written {% total_posts %} posts so far.</p>
 
