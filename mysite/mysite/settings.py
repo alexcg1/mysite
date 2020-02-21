@@ -120,6 +120,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
+STATIC_ROOT = '/home/alexcg/code/python/mysite/mysite/static'
 STATIC_URL = '/static/'
 
 # Write emails to console. not SMTP
